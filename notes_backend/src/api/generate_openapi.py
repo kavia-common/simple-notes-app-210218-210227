@@ -3,6 +3,13 @@ import os
 
 from src.api.main import app
 
+"""
+Generate and write the OpenAPI schema to interfaces/openapi.json.
+
+Run this module to refresh the API interface specification after
+adding or modifying routes.
+"""
+
 # Get the OpenAPI schema
 openapi_schema = app.openapi()
 
